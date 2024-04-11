@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="datepicker/css/datepicker.css">
+  <link rel="stylesheet" href="site.css">
+  <title>Datepicker Example</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="datepicker">
+        <h2>English</h2>
+        <p>In this demo the default date picker is used.</p>
+        <ul style="text-align: left;">
+          <li>The date picker default language is english.</li>
+          <li>The date picker has no public holidays configured.</li>
+          <li>Users are allowed to select weekends.</li>
+          <li>Default date format is : Month dd, yyyy</li>
+          <br>
+          <br>
+          <br>
+        </ul>
+        <input type="text" id="datepickerInput" readonly>
+        <div class="calendar" id="calendar"></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="datepicker">
+        <h2>Français</h2>
+        <p>In this demo the user is able to specify values for the date picker.</p>
+        <ul style="text-align: left;">
+          <li>The id to bind the date picker to.</li>
+          <li>The id of the input field to bind to.</li>
+          <li>List of months in the users language.</li>
+          <li>Flag to disable weekends.</li>
+          <li>List of public holidays to disable.</li>
+          <li>Custom date format.</li>
+          <br>
+        </ul>
+        <input type="text" id="datepickerInput2" readonly>
+        <div class="calendar" id="calendar2"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="datepicker/js/date-picker.js"></script>
+  <script>
+	//Default calendar not public holidays. 
+    const myDatePicker = new DatePicker();
+	
+    const monthNamesFrench = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+    const publicHolidays = {
+      "2024-01-01": "New Year's Day",
+      "2024-12-25": "Christmas Day",
+    };
+    
+	//French calendar with public holidays.
+    const myDatePicker2 = new DatePicker('datepickerInput2', 'calendar2', monthNamesFrench,true, publicHolidays, 'MM/DD/YYYY');
+  </script>
+</body>
+</html>

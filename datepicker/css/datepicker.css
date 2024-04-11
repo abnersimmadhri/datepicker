@@ -1,0 +1,133 @@
+.datepicker {
+  position: relative;
+  display: inline-block;
+}
+
+.datepicker input {
+  padding: 5px;
+  text-align: center;
+}
+
+.datepicker .calendar {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.datepicker .calendar.visible {
+  display: block;
+}
+
+.calendar-header {
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.calendar-header button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  padding: 5px 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.calendar-header button:hover {
+  background-color: #f0f0f0;
+}
+
+.prevMonthButton {
+  left: 10px;
+}
+
+.nextMonthButton {
+  right: 10px;
+}
+
+.month-year {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 40px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.datepicker .calendar td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.datepicker .calendar th {
+  background-color: #f2f2f2;
+}
+
+.datepicker .calendar td {
+  cursor: pointer;
+}
+
+.datepicker .calendar td:hover {
+  background-color: #f0f0f0;
+}
+
+.datepicker {
+  position: relative;
+  display: inline-block;
+}
+
+.datepicker input {
+  padding: 5px;
+}
+
+.datepicker .calendar {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.datepicker .calendar.visible {
+  display: block;
+}
+
+.datepicker input {
+  padding: 5px;
+  text-align: center;
+}
+
+.datepicker .calendar td.disabled {
+  color: #ccc;
+  pointer-events: none;
+  border: none;
+}
+
+td.public-holiday {
+  color: gray;
+  border: none !important;
+}
