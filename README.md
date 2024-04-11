@@ -6,6 +6,7 @@ Custom Javascript datepicker allows user to specify public holidays, custom mont
 Download the zip file. include the datepicker stylesheet and datepicker js file in your Html
 
 <link rel="stylesheet" href="datepicker/css/datepicker.css">
+
 <script src="datepicker/js/date-picker.js"></script>
 
 Then initialise the date picker with the defaults 
@@ -16,8 +17,8 @@ Then initialise the date picker with the defaults
 or specify custom values
 
   <script>	
-    const monthNamesFrench = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
-    const publicHolidays = {
+      const monthNamesFrench = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+      const publicHolidays = {
       "2024-01-01": "New Year's Day",
       "2024-12-25": "Christmas Day",
     };
